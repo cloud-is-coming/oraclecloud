@@ -32,7 +32,7 @@
 
 在“Select Account Type”下拉框中选择“Cloud Account with Identity Cloud Service”,在“Cloud Account Name”文本输入框中，输入云账号名称，然后点击“My Services”按钮，进入登录界面。
 
-![**<图片2>**](https://github.com/cloud-is-coming/oraclecloud/tree/master/mysqlcs-get-started/provisioning/2.jpg)
+![**<图片2>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/provisioning/2.jpg)
 
 在用户认证界面，输入用户名和口令，点击登录
 
