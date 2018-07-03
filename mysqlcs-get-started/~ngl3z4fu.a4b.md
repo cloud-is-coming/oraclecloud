@@ -28,7 +28,7 @@
 点击“Sign In”，
 
 
-![图片描述](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/provisioning/1.jpg)
+![图片描述](oraclecloud/mysqlcs-get-started/provisioning/1.jpg)
 
 在“Select Account Type”下拉框中选择“Cloud Account with Identity Cloud Service”,在“Cloud Account Name”文本输入框中，输入云账号名称，然后点击“My Services”按钮，进入登录界面。
 
