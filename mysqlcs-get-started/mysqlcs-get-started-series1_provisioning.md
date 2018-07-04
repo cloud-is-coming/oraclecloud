@@ -92,9 +92,7 @@ Agent User： 监控代理用户名和口令
 
 创建成功，整个创建过程只用了短短的10分钟。
 
-点击刚刚创建好的实例名称，进入实例的详细信息界面：
 
-![**<图片12>**](https://github.com/cloud-is-coming/oraclecloud/tree/master/mysqlcs-get-started/provisioning/12.jpg )
 
 
 
