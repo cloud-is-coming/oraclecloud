@@ -76,10 +76,15 @@ mysql> show databases;
 ![**<图片9>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/access/9.jpg)
 
 输入访问规则相关配置信息：
+
 **Rule Name**：app-server-access
+
 **Source**：选择<custom>，自定义访问源，在下面的文本框中输入应用服务器的IP地址或者网段，允许这些服务器或者网段访问MySQL服务。注：如果是多个IP地址，必须用逗号分开，如果是网段，必须是CIDR格式。
+
 **Destination**：选择mysql_MASTER,即可以访问MySQL实例。注：另一个选项是mysql_ADMIN_HOST,即允许访问操作系统。
+
 **Destination Port(s)**: 输入3306，即允许应用服务器通过3306端口访问MySQL实例。注：端口可以自定义，但必须与MySQL实例开放的端口一致。
+
 **Protocal**：选择TCP协议。
 
 配置完成，点击Create。
