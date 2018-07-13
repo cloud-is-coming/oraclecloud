@@ -41,30 +41,45 @@
 《图片4》
 ![**<图片4>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/4.jpg)
 
-点击漏斗图标，查看备份信息：
+点击钟表图标，查看备份信息：
 
 《图片5》
 ![**<图片5>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/5.jpg)
 
 
+备份成功，点击钟表图标，查看备份信息：
+
+《图片6》
+![**<图片6>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/6.jpg)
+
+
+**恢复MySQL实例**
+
+当数据库发生故障，如数据文件损坏等，需要使用备份来进行恢复。
+进入"Available Backups"区域，选择最近一次成功的备份，点击右边的下拉菜单，选择“Restore”选项：
+
+《图片7》
+![**<图片7>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/7.jpg)
+
+
+为本次恢复添加备注后， 点击“Restore”按钮。
+
+《图片8》
+![**<图片8>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/8.jpg)
+
+再次确认，点击“Yes, Restore Instance”，正式开始使用备份来恢复数据库。
+
+《图片9》
+![**<图片9>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/9.jpg)
+
+实例恢复中。
+
+《图片10》
+![**<图片10>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/10.jpg)
 
 
 
-
-
-
-
-
-点击实例名"DemoDB",进入该实例的主界面：
-
-《图片2》
-![**<图片2>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/access/2.jpg)
-
-
-
-
-
-
+**设置自动备份计划**
 
 
 
