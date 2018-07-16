@@ -65,16 +65,19 @@
 为本次恢复添加备注后， 点击“Restore”按钮。
 
 《图片8》
+
 ![**<图片8>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/8.jpg)
 
 再次确认，点击“Yes, Restore Instance”，正式开始使用备份来恢复数据库。
 
 《图片9》
+
 ![**<图片9>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/9.jpg)
 
 实例恢复中。
 
 《图片10》
+
 ![**<图片10>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/10.jpg)
 
 
@@ -87,17 +90,20 @@
 进入MySQL实例的“管理”界面，点击“Available Backups”右侧的下拉菜单，选择“Configure Backups”选项，进入备份设置界面：
 
 《图片11》
+
 ![**<图片11>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/11.jpg)
 
 在“Configure Backups”界面，根据数据库的实际情况设置以下策略：
-Full Backup： 数据库全备时间，本例设置为每周一18点做一次全库备份；
 
-Incremental Backup：数据库增量备份时间，本例为每天20点做一次数据库增量备份；
+**Full Backup**： 数据库全备时间，本例设置为每周一18点做一次全库备份；
 
-Retention Period： 数据库备份的保留时间，缺省为30天。
+**Incremental Backup**：数据库增量备份时间，本例为每天20点做一次数据库增量备份；
+
+**Retention Period**： 数据库备份的保留时间，缺省为30天。
 
 
 《图12》
+
 ![**<图片12>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/12.jpg)
 
 自动备份计划设置完成后，我们可以在“管理”界面的“Backup”的概要页面上看到已经设置好的自动备份计划，如图：
@@ -105,6 +111,7 @@ Retention Period： 数据库备份的保留时间，缺省为30天。
 
 
 《图13》
+
 ![**<图片13>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/13.jpg)
 
 备注：
@@ -135,6 +142,7 @@ Retention Period： 数据库备份的保留时间，缺省为30天。
 确认删除备份。
 
 《图16》
+
 ![**<图片16>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/mysqlcs-get-started/backup/16.jpg)
 
 
