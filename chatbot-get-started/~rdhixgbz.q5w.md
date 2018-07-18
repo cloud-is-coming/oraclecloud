@@ -17,9 +17,10 @@ In this section, you’ll take a look at a banking chatbot named MasterBot. This
 
 2.	In the left navbar, click Mobile Apps and then select Bots.
 
-[<picture 1-1>](https://github.com/cloud-is-coming/oraclecloud/blob/master/chatbot-get-started/lab1/1-1.jpg)
+![<picture 1-1>](https://github.com/cloud-is-coming/oraclecloud/blob/master/chatbot-get-started/lab1/1-1.jpg)
 
 
+![dd](https://github.com/cloud-is-coming/oraclecloud/blob/master/chatbot-get-started/lab1/1-1.jpg)
 
 The landing page appears, which displays a catalog of the chatbots that were created on this instance.
 
