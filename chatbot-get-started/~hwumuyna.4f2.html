@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+      http://www.oschina.net/question/124879_76399
+  */
+  
+  html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+   
+  body{
+      color:#444;
+      font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+      font-size:13px;
+      line-height:1.5em;
+      padding:1em;
+      margin:auto;
+      max-width:42em;
+      background:#fefefe;
+  }
+   
+  h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+  }
+   
+  h1 {
+      color: #000000;
+      font-size: 28px;
+  }
+   
+  h2 {
+      border-bottom: 2px solid #CCCCCC;
+      color: #000000;
+      font-size: 24px;
+  }
+   
+  h3 {
+      border-bottom: 2px solid #CCCCCC;
+      font-size: 18px;
+  }
+   
+  h4 {
+      font-size: 16px;
+  }
+   
+  h5 {
+      font-size: 14px;
+  }
+   
+  h6 {
+      color: #777777;
+      background-color: inherit;
+      font-size: 14px;
+  }
+   
+  hr {
+      height: 0.2em;
+      border: 0;
+      color: #CCCCCC;
+      background-color: #CCCCCC;
+  }
+   
+  p, blockquote, ul, ol, dl, li, table, pre {
+      margin: 15px 0;
+  }
+   
+  p{
+      margin:1em 0;
+  }
+   
+  pre { 
+      background-color: #F8F8F8;    
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      overflow: auto;
+      padding: 5px;
+  }
+   
+  pre code {
+      background-color: #F8F8F8;
+      border: none;    
+      padding: 0;
+  }
+   
+  code {
+      font-family: Consolas, Monaco, Andale Mono, monospace;
+      background-color:#F8F8F8;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      padding: 0 0.2em;
+      line-height: 1;
+  }
+   
+  pre > code {
+      border: 0;
+      margin: 0;
+      padding: 0;
+  }
+   
+   
+  a{ color: #0645ad; text-decoration:none;}
+  a:visited{ color: #0b0080; }
+  a:hover{ color: #06e; }
+  a:active{ color:#faa700; }
+  a:focus{ outline: thin dotted; }
+  a:hover, a:active{ outline: 0; }
+   
+  ::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+  ::selection{background:rgba(255,255,0,0.3);color:#000}
+   
+  a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+  a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+   
+  blockquote{
+      color:#666666;
+      margin:0;
+      padding-left: 3em;
+      border-left: 0.5em #EEE solid;
+  }
+   
+  ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+  li p:last-child { margin:0 }
+  dd { margin: 0 0 0 2em; }
+   
+  img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width:100%;}
+   
+  table { border-collapse: collapse; border-spacing: 0; }
+  td { vertical-align: top; }
+   
+  @media only screen and (min-width: 480px) {
+      body{font-size:14px;}
+  }
+   
+  @media only screen and (min-width: 768px) {
+      body{font-size:16px;}
+  }
+  </style>
+</head>
+<body>
+<h1 id="oracle-intelligent-bots-training">Oracle Intelligent Bots Training</h1>
+<p><strong>Meet a Chatbot </strong></p>
+<p>In this lab, you&#8217;ll examine, explore and test a financial banking chatbot. The chatbot, called MasterBot, allows users to find balances in their banking accounts, transfer money between banking accounts, and send money to different people and accounts.</p>
+<p><strong>Before You Begin</strong></p>
+<p>To complete the labs, you will need access to Oracle Mobile Cloud, Enterprise (OMCe). To help you build your chatbots, you will use a set of files that contain code that&#8217;s referenced in the instructions. These files are contained in the labfiles.zip file. Before beginning this exercise, download and unzip this file. Save it to a convenient place because you&#8217;ll be referring to it throughout this course.</p>
+<p><strong>Step 1: Test the Get Balance Function</strong></p>
+<p>In this section, you&#8217;ll take a look at a banking chatbot named MasterBot. This is a complete chatbot that you will reconstruct during the course. In this section, you will focus on testing its Get Balance function.</p>
+<ol style="list-style-type: decimal">
+<li><p>Log in to your OMCe instance.</p></li>
+<li><p>In the left navbar, click Mobile Apps and then select Bots.</p></li>
+</ol>
+<p><a href="https://github.com/cloud-is-coming/oraclecloud/tree/master/chatbot-get-started/lab1/1-1.jpg"><picture 1-1></a></p>
+<p>The landing page appears, which displays a catalog of the chatbots that were created on this instance.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>In the Filter field, enter MasterBot.</li>
+</ol>
+<p><Picture 1-2></p>
+<p>The MasterBot tile should appear in the filtered list of bots. If you can&#8217;t find it, it&#8217;s probably because it hasn&#8217;t been loaded into your instance. If this happens, you can create this chatbot quickly by first clicking the Import Bot button and then navigating to, and selecting, the MasterBot.json file that&#8217;s located in the labfiles/code directory of the labfiles.zip file.</p>
+<p><Picture 1-3></p>
+<p><strong>Note:</strong> If you ever need to clone, export, or delete the chatbot, you can find these functions from the drop down hamburger menu located in the lower right of the tile. You can also extract a log of this chatbot&#8217;s previous conversations for future reference. You won't need to use these functions now, but just know they are here when you do need them.</p>
+<p><Picture 1-4></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Click the MasterBot tile to see the chatbot details.</li>
+</ol>
+<p><Picture 1-5></p>
+<p>You can now take a look at the various parts of the chatbot and see how it was designed. On the left, you can see the navbar, which displays a vertical list of icons that allow you to work on the chatbot's intents, entities, flow, components, and settings. Each icon that you click navigates you to that portion of the chatbot's design.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Click the Intent button (the flag) in the left navbar and then select the Balances intent.</li>
+</ol>
+<p><Picture 1-6></p>
+<p>On the top far right, notice the Play icon (that white triangle pointing to the right). This is the button you use to test the chatbot. Click the Play button.</p>
+<ol start="6" style="list-style-type: decimal">
+<li>A test pane (the Tester) opens, where you can enter text messages and send them to the chatbot. The chatbot&#8217;s replies display above the Messages area.</li>
+</ol>
+<p><strong>Note:</strong> If you've just imported the chatbot, then you need to click the Train button before you chat with it.</p>
+<p><strong>Tip:</strong> The Reset button allows you to exit any chatbot conversation and start over. If you want to dismiss the test pane, just click the Play icon.</p>
+<p><Picture 1-7></p>
+<ol start="7" style="list-style-type: decimal">
+<li>In the message area, type in What's my balance? and then click the Send button.</li>
+</ol>
+<p><Picture 1-8></p>
+<ol start="8" style="list-style-type: decimal">
+<li><p>The chatbot recognizes that the request is about balances, and to enable it to return an amount, it needs to know the type of account. The chatbot then displays the accounts that it knows about and allows you to select the one you want. You could either type the value in to the Message area, or select it using your mouse.</p></li>
+<li><p>Select one of the accounts. The chatbot returns the balance amount for that account.</p></li>
+</ol>
+<p><Picture 1-9></p>
+<ol start="10" style="list-style-type: decimal">
+<li>If you would have included the account type in the initial request, then the chatbot would have returned the amount without any prompting for the account. So, try that out by entering What&#8217;s my savings balance? and then click Send</li>
+</ol>
+<p><strong>Tip:</strong> Finish each round of questions and answers, or click the Reset button to create a new session. Doing this avoids confusion with an incomplete flow from a previous session</p>
+<p><Picture 1-10></p>
+<p>A message is returned showing the balance amount for a specific account type.</p>
+<p><Picture 1-11></p>
+<ol start="11" style="list-style-type: decimal">
+<li>Try some other phrases of your own that are associated with retrieving a bank balance to see how effective they are. Enter phrases like:</li>
+</ol>
+<ul>
+<li>How much do I owe on my credit card?<br />
+</li>
+<li>How much money do I have in checking?<br />
+</li>
+<li>What&#8217;s my available credit on my Amex?</li>
+<li>What&#8217;s the current balance on my Chase account?</li>
+</ul>
+<p><strong>Tip:</strong> Remember to click Reset.</p>
+<p><strong>Step 2: Test the Send Money Function</strong></p>
+<p>In this section, you test the ability of the MasterBot to send money from a bank account to someone. Like the bank accounts, you select the recipients from a predefined list.</p>
+<ol style="list-style-type: decimal">
+<li>Let's first see how the chatbot responds to a simple version of the request, with the chatbot driving the interaction by issuing prompts.</li>
+</ol>
+<p>Click the Reset button. Next, enter Send Sasha money and then click Send.</p>
+<p><picture 2-1></p>
+<ol start="2" style="list-style-type: decimal">
+<li>The first thing the chatbot needs to know is: which account do you want the money to come from, so select an account.</li>
+</ol>
+<p><picture 2-2></p>
+<ol start="3" style="list-style-type: decimal">
+<li>The last bit of info the chatbot needs is the amount of money to transfer from your account. Be sure to include a dollar sign (&quot;$&quot;) before the amount as shown in the screen shot.</li>
+</ol>
+<p>Enter a value and click Send.</p>
+<p><picture 2-3></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Now let's try sending all three components in the initial message. Enter and then send, Pay 25 euro to the babysitter from savings.</li>
+</ol>
+<p>If you provide all the required bits of data all at once, the chatbot can process this and return a confirmation.</p>
+<p><picture 2-4></p>
+<p>Try out some alternate phrasing, different accounts, and different amounts, like:</p>
+<ul>
+<li>I&#8217;d like to send Sasha $20 for lunch.<br />
+</li>
+<li>Pay Mom for rent on the 1st of every month using Visa.<br />
+</li>
+<li>Pay Lauren $15 for photos.</li>
+<li>Send $500 to Mom from Savings every month.</li>
+</ul>
+<p>In the next section, you will test out how Track Spending works.</p>
+<p><strong>Step 3: Test the Track Spending intent</strong></p>
+<p>In this section, you&#8217;ll see how the chatbot can return the amount of money that you spent from a specific category during a certain time frame. Testing this intent requires a bit more precision. The way this function is set up, you need to know a couple of things: the spending category and a period of time to use as a measurement.</p>
+<ol style="list-style-type: decimal">
+<li>Inside the Tester, enter How much did I spend on gas? and then click Send. The return response specifies the amount, the category and a time period.</li>
+</ol>
+<p><picture 3-1></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Click the Reset button. Next, enter How much did I spend at restaurants? and then click Send.</li>
+</ol>
+<p><picture 3-2></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Click Reset, enter another How much did I spend on travel? and then click Send.</li>
+</ol>
+<p><picture 3-3></p>
+<p>Similar to your earlier testing, try some other statements that specify a time frame and a category. Here are some that may help:</p>
+<ul>
+<li>How much did I spend eating out last week?</li>
+<li>How much did I spend on clothes last month?</li>
+<li>How much did I spend on gas in October?</li>
+<li>How much did I spend on gas using my Visa cc last month?</li>
+</ul>
+<p>In some cases, you will receive a message that you've spent $0 for a spending category. If you get this error, just refine your wording and try again.</p>
+<p>Congratulations! You&#8217;ve completed the first chatbot lab. In subsequent labs, you'll learn how to design, build, and test the MasterBot that you just explored.</p>
+</body>
+</html>
