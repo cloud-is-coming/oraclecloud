@@ -1,7 +1,6 @@
 # Oracle Intelligent Bots Training	
 
-
-**Meet a Chatbot	**
+**Meet a Chatbot**
 
 In this lab, you’ll examine, explore and test a financial banking chatbot. The chatbot, called MasterBot, allows users to find balances in their banking accounts, transfer money between banking accounts, and send money to different people and accounts.
 
