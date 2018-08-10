@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+      http://www.oschina.net/question/124879_76399
+  */
+  
+  html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+   
+  body{
+      color:#444;
+      font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+      font-size:13px;
+      line-height:1.5em;
+      padding:1em;
+      margin:auto;
+      max-width:42em;
+      background:#fefefe;
+  }
+   
+  h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+  }
+   
+  h1 {
+      color: #000000;
+      font-size: 28px;
+  }
+   
+  h2 {
+      border-bottom: 2px solid #CCCCCC;
+      color: #000000;
+      font-size: 24px;
+  }
+   
+  h3 {
+      border-bottom: 2px solid #CCCCCC;
+      font-size: 18px;
+  }
+   
+  h4 {
+      font-size: 16px;
+  }
+   
+  h5 {
+      font-size: 14px;
+  }
+   
+  h6 {
+      color: #777777;
+      background-color: inherit;
+      font-size: 14px;
+  }
+   
+  hr {
+      height: 0.2em;
+      border: 0;
+      color: #CCCCCC;
+      background-color: #CCCCCC;
+  }
+   
+  p, blockquote, ul, ol, dl, li, table, pre {
+      margin: 15px 0;
+  }
+   
+  p{
+      margin:1em 0;
+  }
+   
+  pre { 
+      background-color: #F8F8F8;    
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      overflow: auto;
+      padding: 5px;
+  }
+   
+  pre code {
+      background-color: #F8F8F8;
+      border: none;    
+      padding: 0;
+  }
+   
+  code {
+      font-family: Consolas, Monaco, Andale Mono, monospace;
+      background-color:#F8F8F8;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      padding: 0 0.2em;
+      line-height: 1;
+  }
+   
+  pre > code {
+      border: 0;
+      margin: 0;
+      padding: 0;
+  }
+   
+   
+  a{ color: #0645ad; text-decoration:none;}
+  a:visited{ color: #0b0080; }
+  a:hover{ color: #06e; }
+  a:active{ color:#faa700; }
+  a:focus{ outline: thin dotted; }
+  a:hover, a:active{ outline: 0; }
+   
+  ::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+  ::selection{background:rgba(255,255,0,0.3);color:#000}
+   
+  a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+  a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+   
+  blockquote{
+      color:#666666;
+      margin:0;
+      padding-left: 3em;
+      border-left: 0.5em #EEE solid;
+  }
+   
+  ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+  li p:last-child { margin:0 }
+  dd { margin: 0 0 0 2em; }
+   
+  img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width:100%;}
+   
+  table { border-collapse: collapse; border-spacing: 0; }
+  td { vertical-align: top; }
+   
+  @media only screen and (min-width: 480px) {
+      body{font-size:14px;}
+  }
+   
+  @media only screen and (min-width: 768px) {
+      body{font-size:16px;}
+  }
+  </style>
+</head>
+<body>
+<h2 id="oracle&#33258;&#27835;&#20107;&#21153;&#22788;&#29702;&#20113;&#26381;&#21153;&#25250;&#20808;&#20307;&#39564;2--&#36830;&#25509;atp&#23454;&#20363;">Oracle&#33258;&#27835;&#20107;&#21153;&#22788;&#29702;&#20113;&#26381;&#21153;&#25250;&#20808;&#20307;&#39564;2--&#36830;&#25509;ATP&#23454;&#20363;</h2>
+<p><a href="http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/atp/OBE_Connecting%20SQL%20Developer%20to%20Autonomous%20Transaction%20Processing/connecting_sql_developer_to_autonomous_transaction_processing.html">Connecting SQL Developer to Autonomous Transaction Processing</a></p>
+<h1 id="&#35775;&#38382;atp&#23454;&#20363;"><strong>&#35775;&#38382;ATP&#23454;&#20363;</strong></h1>
+<p>&#21487;&#20197;&#29992;&#22810;&#31181;&#26041;&#24335;&#35775;&#38382;ATP&#65292;&#22914;&#65306;</p>
+<ul>
+<li>Connect SQL*Plus Connect</li>
+<li>SQLcl Connect</li>
+<li>SQL Developer</li>
+<li>Connect with JDBC Thin Driver</li>
+</ul>
+<p><strong>&#26412;&#25991;&#23558;&#20171;&#32461;&#20351;&#29992;Oracle SQL Developer&#24037;&#20855;&#26469;&#35775;&#38382;ATP&#23454;&#20363;&#12290;</strong></p>
+<p>Oracle SQL Developer&#24037;&#20855;&#26159;&#25968;&#25454;&#24211;&#31649;&#29702;&#21592;&#21644;&#25968;&#25454;&#24211;&#24320;&#21457;&#20154;&#21592;&#30340;&#26368;&#29233;&#65292;&#23427;&#19981;&#20809;&#22909;&#29992;&#65292;&#36824;&#26159;&#20813;&#36153;&#30340;&#12290;&#35775;&#38382;ATP&#65292;&#23545;SQL Developer&#30340;&#29256;&#26412;&#26377;&#35201;&#27714;&#65292;&#29256;&#26412;&#22826;&#20302;&#20102;&#26159;&#19981;&#34892;&#30340;&#65292;&#27605;&#31455;ATP&#26159;&#19968;&#20010;&#24456;&#28843;&#37239;&#30340;&#19996;&#35199;&#65292;&#24635;&#24471;&#30684;&#25345;&#19968;&#28857;&#21543;&#65292;&#19981;&#26159;&#21738;&#20010;&#38543;&#20415;&#30340;&#24037;&#20855;&#23601;&#21487;&#20197;&#35775;&#38382;&#30340;&#12290;&#26368;&#20302;&#29256;&#26412;&#26159;&#22810;&#23569;&#21602;&#65311; &#25105;&#20063;&#19981;&#30693;&#36947;&#65292;&#25991;&#26723;&#19978;&#27809;&#26377;&#35828;&#65292;&#25105;&#21482;&#30693;&#36947;&#26377;&#19968;&#20010;18.2.0&#20197;&#19978;&#30340;&#29256;&#26412;&#32943;&#23450;&#26159;&#27809;&#38382;&#39064;&#30340;&#65292;&#20170;&#22825;&#23601;&#20171;&#32461;18.2&#20197;&#19978;&#30340;&#29256;&#26412;&#65292;&#20854;&#20182;&#30340;&#29256;&#26412;&#65292;&#20320;&#20204;&#33258;&#24049;&#30740;&#31350;&#21435;&#12290;</p>
+<p>&#26368;&#26032;&#29256; SQL Developer&#19979;&#36733;&#22320;&#22336;&#19979;&#38754;&#65292;&#25214;&#21040;&#26368;&#26032;&#29256;&#30340;&#65292;&#19979;&#36733;&#19979;&#26469;&#23601;&#26159;&#20102;&#65292;&#27880;&#24847;&#65306;&#26368;&#22909;&#36873;&#24102;JDK&#30340;&#65288;&#22914;&#65306;Windows 64-bit with JDK 9 included&#65289;&#12290; &#19979;&#36733;&#38142;&#25509;&#65306;<a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html">SQL Developer</a></p>
+<p>&#24037;&#20855;&#19979;&#36733;&#19979;&#26469;&#21518;&#65292;&#26080;&#38656;&#23433;&#35013;&#65292;&#30452;&#25509;&#25171;&#24320;&#65288;&#23601;&#26159;&#36825;&#20040;&#20219;&#24615;&#65289;&#65292;&#21491;&#38190;&#28857;&#20987;&#24038;&#19978;&#35282;&#8220;&#36830;&#25509;&#8221;&#25353;&#38062;&#65292;&#36873;&#25321;&#8220;&#26032;&#24314;&#36830;&#25509;&#8221;&#12290;</p>
+<p>&#12298;&#22270;1&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/1.png" alt="" /></p>
+<p>&#37197;&#32622;&#25968;&#25454;&#24211;&#36830;&#25509;&#12290;</p>
+<p>&#12298;&#22270;2&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/2.png" alt="" /></p>
+<p><strong>&#38656;&#35201;&#37197;&#32622;&#65306;</strong></p>
+<p><strong>&#36830;&#25509;&#21517;</strong>&#65306;&#21517;&#31216;&#32780;&#24050;&#12290;</p>
+<p><strong>&#29992;&#25143;&#21517;</strong>&#65306;ATP&#25968;&#25454;&#24211;&#31649;&#29702;&#21592;&#65292;ADMIN&#65288;&#20320;&#27809;&#24471;&#36873;&#65289;&#12290;</p>
+<p><strong>&#23494;&#30721;</strong>&#65306;ADMIN&#29992;&#25143;&#30340;&#21475;&#20196;&#65288;&#20320;&#33258;&#24049;&#35774;&#32622;&#30340;&#65292;&#21035;&#24536;&#35760;&#20102;&#65289;&#12290;</p>
+<p><strong>&#36830;&#25509;&#31867;&#22411;</strong>&#65306; &#36873;&#8220;&#20113;PDB&#8221;&#25110;&#32773;&quot;Cloud PDB&quot;&#12290;</p>
+<p><strong>&#37197;&#32622;&#25991;&#20214;</strong>&#65306;&#37325;&#28857;&#26469;&#20102;&#65292;&#21069;&#38754;&#19979;&#36733;&#30340;&#23458;&#25143;&#31471;&#20449;&#20219;&#25991;&#20214;&#65292;&#22312;&#36825;&#37324;&#29992;&#19978;&#20102;&#65292;&#22312;&#8220;&#27983;&#35272;&#8221;&#20013;&#25214;&#21040;&#20449;&#20219;&#25991;&#20214;&#30340;&#20301;&#32622;&#65292;&#25171;&#24320;&#21363;&#21487;&#12290;</p>
+<p><strong>&#26381;&#21153;</strong>&#65306;&#19978;&#38754;&#30340;&#23458;&#25143;&#31471;&#20449;&#20219;&#25991;&#20214;&#36873;&#25321;&#21518;&#65292;&#23601;&#20250;&#20986;&#29616;&#19968;&#20010;&#19979;&#25289;&#26381;&#21153;&#21015;&#34920;&#65292;&#36873;&#25321;&#8220;&#25968;&#25454;&#24211;&#21517;_medium&#8221;&#30340;&#26381;&#21153;&#12290;</p>
+<p>&#37197;&#32622;&#23436;&#25104;&#65292;&#20808;&#27979;&#35797;&#19968;&#19979;&#65292;&#27979;&#35797;&#36890;&#36807;&#21518;&#65292;&#28857;&#20987;&#36830;&#25509;&#65292;&#39034;&#21033;&#30340;&#36830;&#25509;&#21040;ATP&#23454;&#20363;&#12290;&#22914;&#22270;&#12290;</p>
+<p>&#12298;&#22270;3&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/3.png" alt="" /></p>
+<p>http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/atp/obe_provisioning%20autonomous%20transaction%20processing/provisioning_autonomous_transaction_processing.html</p>
+<h1 id="create-a-user-in-your-autonomous-transaction-processing-database">Create a User in your Autonomous Transaction Processing Database</h1>
+<p><strong>&#22312;ATP&#24211;&#20013;&#21019;&#24314;&#24212;&#29992;&#31243;&#24207;&#29992;&#25143;</strong></p>
+<p>&#22312;SQL Developer&#30340;&#24037;&#20316;&#34920;&#20013;&#25191;&#34892;&#20197;&#19979;&#35821;&#21477;&#65292;&#21019;&#24314;&#24212;&#29992;&#31243;&#24207;&#29992;&#25143;atpc_user&#65292;&#24182;&#25480;&#20104;&#35282;&#33394;dwrole&#12290;</p>
+<pre><code>create user atpc_user identified by &quot;Q1w2e3r4#Q1w2e3r4#&quot;;
+grant dwrole to atpc_user;</code></pre>
+<p>&#12298;&#22270;4&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/4.png" alt="" /></p>
+<p>Note: Autonomous Transaction Processing databases come with a pre-defined database role named DWROLE. This role provides the common privileges for a database user:</p>
+<pre><code>CREATE ANALYTIC VIEW, 
+CREATE ATTRIBUTE DIMENSION, 
+ALTER SESSION, 
+CREATE HIERARCHY, 
+CREATE JOB, 
+CREATE MINING MODEL, 
+CREATE PROCEDURE, 
+CREATE SEQUENCE, 
+CREATE SESSION, 
+CREATE SYNONYM, 
+CREATE TABLE, 
+CREATE TRIGGER, 
+CREATE TYPE, 
+CREATE VIEW, READ,WRITE ON directory DATA_PUMP_DIR, 
+EXECUTE privilege on the PL/SQL package DBMS_CLOUD</code></pre>
+<p>&#20851;&#20110;&#35282;&#33394;DWROLE&#65292;</p>
+<h1 id="&#22312;sql-developer&#20013;&#26032;&#24314;&#19968;&#20010;&#25968;&#25454;&#24211;&#36830;&#25509;">&#22312;SQL Developer&#20013;&#26032;&#24314;&#19968;&#20010;&#25968;&#25454;&#24211;&#36830;&#25509;</h1>
+<p>&#21019;&#24314;&#19968;&#20010;&#20197;&#29992;&#25143;atpc_user&#30331;&#24405;&#30340;&#25968;&#25454;&#24211;&#36830;&#25509;&#12290;&#28857;&#20987;&#36830;&#25509;&#12290;</p>
+<p>&#12298;&#22270;5&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/5.png" alt="" /></p>
+<p>https://docs.oracle.com/en/cloud/paas/atp-cloud/atpug/getting-started.html#GUID-00645C09-4E76-44C6-8BBE-B433D501AADB</p>
+<p>http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/atp/OBE_Connecting%20SQL%20Developer%20to%20Autonomous%20Transaction%20Processing/connecting_sql_developer_to_autonomous_transaction_processing.html</p>
+<h1 id="create-sh-tables-in-your-autonomous-transaction-processing-database">Create SH Tables in your Autonomous Transaction Processing Database</h1>
+<p>&#22312;ATP&#25968;&#25454;&#24211;&#20013;&#21019;&#24314;SH&#34920;&#65288;&#65289; After you have connected SQL Developer to your Autonomous Transaction Processing database, use a SQL Developer worksheet to define CREATE TABLE statements to create the SH tables (sales history tables from an Oracle sample schema) in the atpc_user schema. In the next tutorial, you will load data into these tables from an object store.</p>
+<p>&#12298;&#22270;6&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/6.png" alt="" /></p>
+<h1 id="examine-the-sh-tables-that-you-created">Examine the SH Tables that you Created</h1>
+<p>&#26816;&#26597;&#33050;&#26412;&#36755;&#20986;&#20869;&#23481;&#65292;&#30830;&#35748;&#25152;&#26377;&#34920;&#26159;&#21542;&#21019;&#24314;&#25104;&#21151;&#12290;</p>
+<p>&#12298;&#22270;7&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/7.png" alt="" /></p>
+<p>Note that the new tables also appear in the SQL Developer Connections panel.</p>
+<p>&#12298;&#22270;8&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/8.png" alt="" /></p>
+<p>Examine the details of each column of the CHANNELS table.</p>
+<p>&#12298;&#22270;9&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/9.png" alt="" /></p>
+</body>
+</html>
