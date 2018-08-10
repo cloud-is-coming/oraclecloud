@@ -28,12 +28,12 @@ Oracle SQL Developer工具是数据库管理员和数据库开发人员的最爱
 
 
 《图1》
-![**<图片1>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/1.png)
+![**<图片1>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/1.png)
 
 配置数据库连接。
 
 《图2》
-![**<图片2>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/2.png)
+![**<图片2>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/2.png)
 
 **需要配置：**
 
@@ -52,7 +52,7 @@ Oracle SQL Developer工具是数据库管理员和数据库开发人员的最爱
 配置完成，先测试一下，测试通过后，点击连接，顺利的连接到ATP实例。如图。
 
 《图3》
-![**<图片3>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/3.png)
+![**<图片3>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/3.png)
 
 http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/atp/obe_provisioning%20autonomous%20transaction%20processing/provisioning_autonomous_transaction_processing.html
 
@@ -66,7 +66,7 @@ http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/atp/obe_provisio
 	
 
 《图4》
-![**<图片4>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/4.png)
+![**<图片4>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/4.png)
 
 
 
@@ -97,7 +97,7 @@ This role provides the common privileges for a database user:
 创建一个以用户atpc_user登录的数据库连接。点击连接。
 
 《图5》
-![**<图片5>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/5.png)
+![**<图片5>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/5.png)
 
 https://docs.oracle.com/en/cloud/paas/atp-cloud/atpug/getting-started.html#GUID-00645C09-4E76-44C6-8BBE-B433D501AADB
 
@@ -111,7 +111,7 @@ After you have connected SQL Developer to your Autonomous Transaction Processing
 
 
 《图6》
-![**<图片6>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/6.png)
+![**<图片6>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/6.png)
 
 
 
@@ -119,17 +119,17 @@ After you have connected SQL Developer to your Autonomous Transaction Processing
 检查脚本输出内容，确认所有表是否创建成功。
 
 《图7》
-![**<图片7>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/7.png)
+![**<图片7>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/7.png)
 
 Note that the new tables also appear in the SQL Developer Connections panel.
 
 《图8》
-![**<图片8>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/8.png)
+![**<图片8>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/8.png)
 
 Examine the details of each column of the CHANNELS table. 
 
 《图9》
-![**<图片9>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/connecting/9.png)
+![**<图片9>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/9.png)
 
 
 
