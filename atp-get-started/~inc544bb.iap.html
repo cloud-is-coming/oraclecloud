@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+      http://www.oschina.net/question/124879_76399
+  */
+  
+  html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+   
+  body{
+      color:#444;
+      font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+      font-size:13px;
+      line-height:1.5em;
+      padding:1em;
+      margin:auto;
+      max-width:42em;
+      background:#fefefe;
+  }
+   
+  h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+  }
+   
+  h1 {
+      color: #000000;
+      font-size: 28px;
+  }
+   
+  h2 {
+      border-bottom: 2px solid #CCCCCC;
+      color: #000000;
+      font-size: 24px;
+  }
+   
+  h3 {
+      border-bottom: 2px solid #CCCCCC;
+      font-size: 18px;
+  }
+   
+  h4 {
+      font-size: 16px;
+  }
+   
+  h5 {
+      font-size: 14px;
+  }
+   
+  h6 {
+      color: #777777;
+      background-color: inherit;
+      font-size: 14px;
+  }
+   
+  hr {
+      height: 0.2em;
+      border: 0;
+      color: #CCCCCC;
+      background-color: #CCCCCC;
+  }
+   
+  p, blockquote, ul, ol, dl, li, table, pre {
+      margin: 15px 0;
+  }
+   
+  p{
+      margin:1em 0;
+  }
+   
+  pre { 
+      background-color: #F8F8F8;    
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      overflow: auto;
+      padding: 5px;
+  }
+   
+  pre code {
+      background-color: #F8F8F8;
+      border: none;    
+      padding: 0;
+  }
+   
+  code {
+      font-family: Consolas, Monaco, Andale Mono, monospace;
+      background-color:#F8F8F8;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      padding: 0 0.2em;
+      line-height: 1;
+  }
+   
+  pre > code {
+      border: 0;
+      margin: 0;
+      padding: 0;
+  }
+   
+   
+  a{ color: #0645ad; text-decoration:none;}
+  a:visited{ color: #0b0080; }
+  a:hover{ color: #06e; }
+  a:active{ color:#faa700; }
+  a:focus{ outline: thin dotted; }
+  a:hover, a:active{ outline: 0; }
+   
+  ::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+  ::selection{background:rgba(255,255,0,0.3);color:#000}
+   
+  a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+  a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+   
+  blockquote{
+      color:#666666;
+      margin:0;
+      padding-left: 3em;
+      border-left: 0.5em #EEE solid;
+  }
+   
+  ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+  li p:last-child { margin:0 }
+  dd { margin: 0 0 0 2em; }
+   
+  img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width:100%;}
+   
+  table { border-collapse: collapse; border-spacing: 0; }
+  td { vertical-align: top; }
+   
+  @media only screen and (min-width: 480px) {
+      body{font-size:14px;}
+  }
+   
+  @media only screen and (min-width: 768px) {
+      body{font-size:16px;}
+  }
+  </style>
+</head>
+<body>
+<h2 id="oracle&#33258;&#27835;&#20107;&#21153;&#22788;&#29702;&#20113;&#26381;&#21153;&#25250;&#20808;&#20307;&#39564;3--&#21521;atp&#25968;&#25454;&#24211;&#20013;&#21152;&#36733;&#25968;&#25454;">Oracle&#33258;&#27835;&#20107;&#21153;&#22788;&#29702;&#20113;&#26381;&#21153;&#25250;&#20808;&#20307;&#39564;3--&#21521;ATP&#25968;&#25454;&#24211;&#20013;&#21152;&#36733;&#25968;&#25454;</h2>
+<h1 id="loading-your-data-to-autonomous-transaction-processing"><a href="http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/atp/OBE_Loading%20Your%20Data%20Into%20Autonomous%20Transaction%20Processing/loading_your_data_Into_autonomous_transaction_processing.html">Loading Your Data to Autonomous Transaction Processing</a></h1>
+<p>&#23558;&#25968;&#25454;&#21152;&#36733;&#21040;ATP&#20013; &#26412;&#25991;&#23558;&#20171;&#32461;&#22914;&#20309;&#23558;&#20113;&#23384;&#20648;&#20013;&#30340;&#25968;&#25454;&#21152;&#36733;&#21040;ATP&#25968;&#25454;&#24211;&#20013;&#12290; &#26377;&#22810;&#31181;&#26041;&#27861;&#26469;&#23454;&#29616;ATP&#25968;&#25454;&#24211;&#30340;&#25968;&#25454;&#21152;&#36733;&#65292;&#21487;&#20197;&#29992;Oracle&#25968;&#25454;&#24211;&#33258;&#24102;&#24037;&#20855;&#12289;&#37319;&#29992;Oracle&#25110;&#31532;&#19977;&#26041;&#30340;&#25968;&#25454;&#38598;&#25104;&#24037;&#20855;&#12290;&#21478;&#22806;&#65292;&#21487;&#20197;&#23558;&#26412;&#22320;&#23458;&#25143;&#31471;&#19978;&#30340;&#25991;&#20214;&#21152;&#36733;&#21040;ATP&#20013;&#65292;&#20063;&#21487;&#20197;&#23558;&#20113;&#23545;&#35937;&#23384;&#20648;&#20013;&#30340;&#25991;&#20214;&#21152;&#36733;&#36827;&#21435;&#12290;</p>
+<p>Oracle&#25512;&#33616;&#20351;&#29992;&#26041;&#27861;&#65306;&#20808;&#23558;&#25968;&#25454;&#19978;&#20256;&#21040;&#20113;&#23384;&#20648;&#19978;&#65292;&#20877;&#20174;&#20113;&#23384;&#20648;&#20013;&#21152;&#36733;&#21040;ATP&#20013;&#65292;&#36825;&#26159;&#21152;&#36733;&#36895;&#24230;&#26368;&#24555;&#30340;&#26041;&#24335;&#12290;&#25968;&#25454;&#21152;&#36733;&#38656;&#35201;&#29992;&#21040;ATP&#25968;&#25454;&#24211;&#20013;&#30340;&#19968;&#20010;&#26032;&#24341;&#20837;&#30340;&#21253;DBMS_CLOUD&#12290;DBMS_CLOUD&#30446;&#21069;&#25903;&#25345;Oracle Cloud Infrastructure Object Storage, Oracle Cloud Infrastructure Object Storage Classic, and Amazon AWS S3&#12290;</p>
+<p>&#26412;&#27425;&#23454;&#39564;&#65292;&#25105;&#20204;&#23558;&#28436;&#31034;&#20197;&#19979;&#27493;&#39588;&#65306;&#20808;&#23558;&#25968;&#25454;&#25991;&#20214;&#19978;&#20256;OCI Object Storage&#19978;&#65292;&#28982;&#21518;&#20174;OCI Object Storage&#25226;&#25968;&#25454;&#21152;&#36733;&#21040;ATP&#20013;&#12290;&#25972;&#20010;&#36807;&#31243;&#38656;&#35201;&#29992;&#21040;DBMS_CLOUD&#21253;&#37324;&#30340;&#20004;&#20010;&#23384;&#20648;&#36807;&#31243;&#65306;create_credential &#21644; copy_data&#65292;&#20854;&#20013;create_credential&#26159;&#29992;&#26469;&#25226;&#23545;&#35937;&#23384;&#20648;&#30340;&#35748;&#35777;&#20196;&#29260;&#23384;&#25918;&#21040;ATP&#30340;Schema&#20013;&#65292;copy_data&#26159;&#29992;&#26469;&#23558;&#25968;&#25454;&#20174;&#25991;&#20214;&#20013;&#21152;&#36733;&#21040;&#25968;&#25454;&#34920;&#20013;&#12290;</p>
+<p>&#12298;&#22270;1&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/1.png" alt="" /></p>
+<p>&#12298;&#22270;2&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/2.png" alt="" /></p>
+<p>&#12298;&#22270;3&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/3.png" alt="" /></p>
+<p>&#12298;&#22270;4&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/4.png" alt="" /></p>
+<p>&#12298;&#22270;5&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/5.png" alt="" /></p>
+<p>&#12298;&#22270;6&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/6.png" alt="" /></p>
+<p>&#12298;&#22270;7&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/7.png" alt="" /></p>
+<p>&#12298;&#22270;8&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/8.png" alt="" /></p>
+<p>&#12298;&#22270;9&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/9.png" alt="" /></p>
+<p>&#12298;&#22270;10&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/10.png" alt="" /></p>
+<p>&#12298;&#22270;11&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/11.png" alt="" /></p>
+<h1 id="create-an-object-store-auth-token">Create an Object Store Auth Token</h1>
+<p>&#21019;&#24314;&#23545;&#35937;&#23384;&#20648;&#35748;&#35777;&#20196;&#29260; To load data from an Oracle Cloud Infrastructure Object Storage object store, you need to create an Auth Token for your object store account. The communication between your Autonomous Transaction Processing database and the object store relies on the Auth Token and username/password authentication.</p>
+<p>&#12298;&#22270;12&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/12.png" alt="" /></p>
+<p>&#12298;&#22270;13&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/13.png" alt="" /></p>
+<p>&#12298;&#22270;14&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/14.png" alt="" /></p>
+<p>&#12298;&#22270;15&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/15.png" alt="" /></p>
+<p>&#12298;&#22270;16&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/16.png" alt="" /></p>
+<p>&#12298;&#22270;17&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/17.png" alt="" /></p>
+<p>Token&#65306;r9aionww6H_-Gki);qmJ</p>
+<p><strong>&#21019;&#24314;&#22909;Authority Token</strong></p>
+<p>&#12298;&#22270;18&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/18.png" alt="" /></p>
+<h1 id="create-object-store-credentials-in-your-autonomous-transaction-processing-schema">Create Object Store Credentials in your Autonomous Transaction Processing Schema</h1>
+<p>Now that you have created an object store Auth Token, store in your Autonomous Transaction Processing atpc_user schema the credentials of the object store in which your data is staged.</p>
+<p>&#12298;&#22270;19&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/19.png" alt="" /></p>
+<p>begin DBMS_CLOUD.create_credential ( credential_name =&gt; 'OBJ_STORE_CRED', username =&gt; '13#######<span class="citation">@139.com</span>', password =&gt; 'r9aionww6H_-Gki);qmJ' ) ; end; /</p>
+<p>&#33050;&#26412;&#25191;&#34892;&#25104;&#21151;&#21518;&#65292;&#25105;&#20204;&#24050;&#32463;&#23558;&#23545;&#35937;&#23384;&#20648;&#30340;&#20196;&#29260;&#25991;&#20214;&#65288;Auth Token&#65289;&#23384;&#20648;&#21040;ATP&#30340;schema atpc_user&#20013;&#12290;</p>
+<p><strong>&#23558;&#20113;&#23545;&#35937;&#23384;&#20648;&#20013;&#30340;&#25991;&#20214;&#25968;&#25454;&#21152;&#36733;&#21040;ATP&#30340;&#34920;&#20013;&#12290;</strong></p>
+<p>&#26684;&#24335;&#22914;&#19979;&#65306; https://objectstorage. <region name>.oraclecloud.com/n/<tenant name>/b/tutorial_load_atpc/o/chan_v3.dat https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenant name>/tutorial_load_atpc/chan_v3.dat &#27880;&#24847;&#65306;&#20854;&#20013;<region name>&#29992;&#21306;&#22495;&#21517;&#31216;&#20195;&#26367;&#65292;&#22914;us-ashburn-1&#65292;<tenant name>&#29992;&#31199;&#25143;&#21517;&#20195;&#26367;&#65292;&#21363;&#20113;&#36134;&#21495;&#21517;&#12290;</p>
+<p>&#12298;&#22270;20&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/20.png" alt="" /></p>
+<p>&#26597;&#30475;&#25968;&#25454;&#26159;&#21542;&#21152;&#36733;</p>
+<p>&#12298;&#22270;21&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/21.png" alt="" /></p>
+<p>&#25191;&#34892;SQL&#35821;&#21477;&#65292;&#26681;&#25454;&#36755;&#20986;&#32467;&#26524;&#26816;&#26597;&#25968;&#25454;&#26159;&#21542;&#21152;&#36733;&#25104;&#21151;&#12290;</p>
+<pre><code>SELECT table_name, owner_name, type, status, start_time, update_time, 
+logfile_table, badfile_table 
+FROM user_load_operations WHERE type = &#39;COPY&#39;;</code></pre>
+<p>&#12298;&#22270;22&#12299; <img src="https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/22.png" alt="" /></p>
+</body>
+</html>
