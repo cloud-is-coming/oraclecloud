@@ -85,6 +85,7 @@ To load data from an Oracle Cloud Infrastructure Object Storage object store, yo
 ![**<图片16>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/16.png)
 
 《图17》
+
 ![**<图片17>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/17.png)
 
 
@@ -98,6 +99,7 @@ Token：r9aionww6H_-Gki);qmJ
 **创建好Authority Token**
 
 《图18》
+
 ![**<图片18>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/18.png)
 
 
@@ -109,18 +111,22 @@ Token：r9aionww6H_-Gki);qmJ
 Now that you have created an object store Auth Token, store in your Autonomous Transaction Processing atpc_user schema the credentials of the object store in which your data is staged.
 
 《图19》
+
 ![**<图片19>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/19.png)
 
 
 
-begin
-  DBMS_CLOUD.create_credential (
-credential_name => 'OBJ_STORE_CRED',
-username => '13#######@139.com',
-password => 'r9aionww6H_-Gki);qmJ'
-  ) ;
-end;
-/
+
+	begin
+	  DBMS_CLOUD.create_credential (
+	credential_name => 'OBJ_STORE_CRED',
+	username => '13#######@139.com',
+	password => 'r9aionww6H_-Gki);qmJ'
+	  ) ;
+	end;
+	/
+
+
 
 
 脚本执行成功后，我们已经将对象存储的令牌文件（Auth Token）存储到ATP的schema atpc_user中。
@@ -131,12 +137,16 @@ end;
 
 
 
-格式如下：
-https://objectstorage. <region name>.oraclecloud.com/n/<tenant name>/b/tutorial_load_atpc/o/chan_v3.dat
-https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenant name>/tutorial_load_atpc/chan_v3.dat
-注意：其中<region name>用区域名称代替，如us-ashburn-1，<tenant name>用租户名代替，即云账号名。
+
+	格式如下：
+	https://objectstorage. <region name>.oraclecloud.com/n/<tenant name>/b/tutorial_load_atpc/o/chan_v3.dat
+	https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenant name>/tutorial_load_atpc/chan_v3.dat
+	注意：其中<region name>用区域名称代替，如us-ashburn-1，<tenant name>用租户名代替，即云账号名。
+
+
 
 《图20》
+
 ![**<图片20>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/20.png)
 
 
@@ -145,6 +155,7 @@ https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenant name>/tutori
 查看数据是否加载
 
 《图21》
+
 ![**<图片21>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Loading/21.png)
 
 
