@@ -22,7 +22,8 @@ Oracle自治事务处理云服务抢先体验系列：
 作为一个技术小白，俺们对官方广告不感兴趣，就想上手试一把。
 手上的资料不多，不能太深入，就从创建实例、连接实例下手。
 
-##创建ATP实例
+**创建ATP实例**
+
 
 进入Oracle云的Web控制台，选择进入OCI服务，提前说明，ATP刚刚发布，目前只部署在少数几个区域，如：
 Region Location	Region Name	Region Key
@@ -67,6 +68,7 @@ Phoenix, AZ	us-phoenix-1	PHX
 **License**： 设置授权模式，可以使用BYOL，可以选择订阅新的数据库软件license和数据库云服务，本例中采用BYOL。
 
 设置以上参数后，就可以点击确认按钮，开始创建ATP实例。 等等，怎么这么快就开始创建了， 建一个数据库不是要设置很多参数吗？像SGA、PGA、字符集等都是必须手工设置的，另外还有一些关键的初始化参数也是要调整的，而且等数据库建好后， 可能还要根据数据库的使用情况适当的调整一些参数。这些参数在哪设置？
+
 答案是：不需要！！！  这些设置都由系统自动调整，根本不需要人干预，不然怎么叫自治数据库呢？
 
 
@@ -87,36 +89,43 @@ Phoenix, AZ	us-phoenix-1	PHX
 几分钟后，ATP实例创建成功！下面是创建好的ATP实例界面，我们可以点击“Service Console”界面进入ATP数据库的控制台，第一时间感受一下ATP。
 
 《图5》
+
 ![**<图片5>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/5.png)
 
 需要数据管理员口令，管理员的用户名是ADMIN（这是缺省设置的），口令是前面我们自己设置的。
 
 《图6》
+
 ![**<图片6>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/6.png)
 
 查看ATP实例的概率：存储空间使用情况、CPU的使用情况、SQL的运行情况等。
 
 《图7》
+
 ![**<图片7>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/7.png)
 
 点击“Activity”，查看ATP数据库的主要运行指标，如数据库的活动数、CPU利用率等。
 
 《图8》
+
 ![**<图片8>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/8.png)
 
 点击“Adminitration”，可以做一些管理工作，如：下载客户端信任文件、设置管理员口令等。其中下载客户端信任文件的工作很重要，因为客户端连接ATP数据库时，必须采用这个客户端信任文件。
 
 《图9》
+
 ![**<图片9>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/9.png)
 
 点击“Download Client Credentials”，下载客户端信任文件。
 
 《图10》
+
 ![**<图片10>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/10.png)
 
 输入管理员口令，点击“Download”下载。系统会生成一个wallet zip文件，把这个文件存放一个目录下。注意：一定好妥善保管好这个文件，客户端连接ATP实例时，必须要使用这个文件，如果被其他非授权用户拿到，就会存在数据库安全风险。
 
 《图11》
+
 ![**<图片11>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/provisioning/11.png)
 
 

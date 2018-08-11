@@ -12,7 +12,8 @@ Oracle自治事务处理云服务抢先体验系列：
 
 
 
-###**访问ATP实例**
+**访问ATP实例**
+
 
 访问ATP实例的方式有多种，如：
 
@@ -62,7 +63,8 @@ Oracle SQL Developer工具是数据库管理员和数据库开发人员的最爱
 
 
 
-###**在ATP库中创建应用程序用户**
+**在ATP库中创建应用程序用户**
+
 
 ADMIN用户是管理员用户，主要用来管理ATP数据库，我们应该为应用程序单独创建用户，来存取应用数据集。
 
@@ -100,6 +102,7 @@ ADMIN用户是管理员用户，主要用来管理ATP数据库，我们应该为
 应用程序用户atpc_user创建完成后，我们来演示，用SQL Developer工具在用户aptc_user下创建SH相关表。
 
 **在SQL Developer中新建一个数据库连接**
+
 创建一个以用户atpc_user登录的数据库连接。点击连接。
 
 《图5》
@@ -111,12 +114,14 @@ https://docs.oracle.com/en/cloud/paas/atp-cloud/atpug/getting-started.html#GUID-
 
 
 
-###在ATP数据库中创建SH相关表
+**在ATP数据库中创建SH相关表**
+
 注：SH即Sales History，是Oracle数据库中的sample schema。在本例中，我们将在用户atpc_user下创建SH相关表，并在下一篇文章中介绍，将外部数据加载到ATP数据库中的SH表中。
 
 首先，通过以下链接，下载[SH表创建脚本](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/scripts/sql_%20commands_to_create_sh_tables_in_atpc_user.txt)。
 
 在SQL Developer的工作表中将SH表创建脚本打开，执行。
+
 《图6》
 ![**<图片6>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/6.png)
 

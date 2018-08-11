@@ -11,7 +11,8 @@ Oracle自治事务处理云服务抢先体验系列：
 
  
 
-###**将数据加载到ATP中**
+**将数据加载到ATP中**
+
 本文将介绍如何将云存储中的数据加载到ATP数据库中。
 有多种方法来实现ATP数据库的数据加载，可以用Oracle数据库自带工具、采用Oracle或第三方的数据集成工具。另外，可以将本地客户端上的文件加载到ATP中，也可以将云对象存储中的文件加载进去。
 
@@ -25,7 +26,8 @@ DBMS_CLOUD目前支持Oracle Cloud Infrastructure Object Storage, Oracle Cloud I
 
 将数据文件压缩包下载到本地文件夹中，并解压缩。
 
-###**将数据文件上传到OCI对象存储中**
+**将数据文件上传到OCI对象存储中**
+
 
 进入OCI主界面，点击左上角“MENU”下拉菜单，选择“Object Storage”-“Object Storage”，如图：
 
@@ -88,7 +90,8 @@ DBMS_CLOUD目前支持Oracle Cloud Infrastructure Object Storage, Oracle Cloud I
 
 
 
-###创建对象存储认证令牌
+**创建对象存储认证令牌**
+
 在从OCI对象存储中加载数据前，需要先创建一个认证令牌（Auth Token）。ATP数据库与对象存储之间的通信，依赖于这个认证令牌和用户口令认证。
 
 
@@ -142,11 +145,12 @@ DBMS_CLOUD目前支持Oracle Cloud Infrastructure Object Storage, Oracle Cloud I
 
 
 
-###使用DBMS_CLOUD加载数据
+**使用DBMS_CLOUD加载数据**
+
 
 在下面的步骤中，我们将在SQL Developer工具中，使用DBMS_CLOUD的两个过程，将上传到OCI对象存储中的数据文件加载到ATP数据库的 atpc_user schema下。
 
-第一步，使用刚刚已经创建的认证令牌，在atpc_user schema中创建一个信任文件。这个过程要用到DBMS_CLOUD下的过程create_credential。
+**第一步**，使用刚刚已经创建的认证令牌，在atpc_user schema中创建一个信任文件。这个过程要用到DBMS_CLOUD下的过程create_credential。
 
 代码示例如下：
 
@@ -175,7 +179,7 @@ password为刚刚生成的认证令牌。
 脚本执行成功后，我们已经将对象存储的令牌文件（Auth Token）存储到ATP的schema atpc_user中。
 
 
-第二步，使用DBMS_CLOUD包中的过程copy_data，最终将对象存储中的数据加载到atpc_user下相关数据表中。
+**第二步**，使用DBMS_CLOUD包中的过程copy_data，最终将对象存储中的数据加载到atpc_user下相关数据表中。
 
 先下载脚本模板，下载链接：[data_load脚本模板](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/scripts/data%20loading%20script.txt)
 
