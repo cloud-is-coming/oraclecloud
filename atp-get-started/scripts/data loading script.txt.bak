@@ -4,7 +4,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'CHANNELS',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/chan_v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/chan_v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
  );
 end;
@@ -14,7 +14,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'COUNTRIES',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/coun_v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/coun_v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
  );
 end;
@@ -24,7 +24,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'CUSTOMERS',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/cust1v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/cust1v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS')
  );
 end;
@@ -34,7 +34,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'SUPPLEMENTARY_DEMOGRAPHICS',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/dem1v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/dem1v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
  );
 end;
@@ -44,7 +44,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'SALES',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/dmsal_v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/dmsal_v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD')
  );
 end;
@@ -54,7 +54,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'PRODUCTS',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/prod1v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/prod1v3.dat',
     format => json_object('delimiter' value '|', 'quote' value '^', 'ignoremissingcolumns' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true')
  );
 end;
@@ -64,7 +64,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'PROMOTIONS',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/prom1v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/prom1v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true')
  );
 end;
@@ -74,7 +74,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'SALES',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/sale1v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/sale1v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD', 'blankasnull' value 'true')
  );
 end;
@@ -84,7 +84,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'TIMES',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/time_v3.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/time_v3.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true')
  );
 end;
@@ -95,7 +95,7 @@ begin
  dbms_cloud.copy_data(
     table_name =>'COSTS',
     credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region name>.oraclecloud.com/v1/<tenent name>/tutorial_load_atpc/costs.dat',
+    file_uri_list =>'https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/lhongqi960/tutorial_load_atpc/costs.dat',
     format => json_object('ignoremissingcolumns' value 'true', 'dateformat' value 'YYYY-MM-DD', 'blankasnull' value 'true')
  );
 end;
