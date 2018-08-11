@@ -108,9 +108,6 @@ ADMIN用户是管理员用户，主要用来管理ATP数据库，我们应该为
 《图5》
 ![**<图片5>**](https://github.com/cloud-is-coming/oraclecloud/blob/master/atp-get-started/Connecting/5.png)
 
-https://docs.oracle.com/en/cloud/paas/atp-cloud/atpug/getting-started.html#GUID-00645C09-4E76-44C6-8BBE-B433D501AADB
-
-
 
 
 
